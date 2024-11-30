@@ -10,6 +10,7 @@ class CarFeatures extends Model
     use HasFactory;
     public $timestamps = false;
 
+    protected $primaryKey = 'car_id';
     protected $fillable = [
         'car_id',
         'abs',
