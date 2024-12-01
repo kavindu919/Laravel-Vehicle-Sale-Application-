@@ -11,4 +11,9 @@ class CarImage extends Model
     public $timestamps = false;
 
     protected $fillable = ['image_path', 'position'];
+
+    public function car()
+    {
+        return $this->belongsTo(related: Car::class);
+    }
 }

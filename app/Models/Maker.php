@@ -11,4 +11,13 @@ class Maker extends Model
     public $timestamps = false;
 
     protected $fillable = ['name'];
+
+    public function cars()
+    {
+        return $this->hasMany(Car::class);
+    }
+    public function models()
+    {
+        return $this->hasMany(Model::class);
+    }
 }

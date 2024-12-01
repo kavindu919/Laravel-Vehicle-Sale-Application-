@@ -26,4 +26,9 @@ class CarFeatures extends Model
         'rear_parking_sensors',
         'leather_seates',
     ];
+
+    public function car()
+    {
+        return $this->belongsTo(Car::class);
+    }
 }
